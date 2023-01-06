@@ -25,7 +25,7 @@ let creator = event => {
   let amountValue = Number(initAmount.value);
 
   for (let i = 0; i < amountValue; i++) {
-    createPromise(i, deleyValue)
+    createPromise(i + 1, deleyValue)
       .then(({ position, delay }) => {
         console.log(`✅ Fulfilled promise ${position} in ${delay}ms`);
       })
